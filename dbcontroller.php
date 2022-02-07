@@ -1,6 +1,6 @@
 <?php
 class DBController {
-	private $host = "localhost";
+	private $host = "guarded-dawn-87251.herokuapp.com";
 	private $user = "webdes57_prom";
 	private $password = "Prom99!!";
 	private $database = "webdes57_prom";
