@@ -1,9 +1,9 @@
 <?php
 class DBController {
-	private $host = "guarded-dawn-87251.herokuapp.com";
-	private $user = "webdes57_prom";
-	private $password = "Prom99!!";
-	private $database = "webdes57_prom";
+	private $host = "localhost";
+	private $user = "upezzsmy_newuser";
+	private $password = "05980751@m";
+	private $database = "upezzsmy_promotion";
 	private $conn;
 	
 	function __construct() {

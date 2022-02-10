@@ -198,6 +198,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
                         <div class="form-field">
                             <input type="email" id="advertiser_email_box0" placeholder="Enter your email here" name="username" value="" required="" aria-required="true" class="full-width">
                         </div>
+                        <span class="help-block"><?php echo $username_err; ?></span>
                         <div class="form-field">
                             <input id="advertiser_password_box0" placeholder="Enter your password here" type="password" value="" required aria-required="true" class="full-width" required="">
                         </div>

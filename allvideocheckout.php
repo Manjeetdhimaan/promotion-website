@@ -23,7 +23,7 @@
 	
 	$orderDetails = "YouTube URL: " . $youtubeURL . "\nWants: " . $wants . "\nGender: " . $gender . "\nAge: " . $age . "\nLocation: " . $location . "\nVideo Category: " . $video_category . "\nKeywords: " . $keywords . "\nBudget: " . $budget . "\nViews: " . $views;
 	
-	$conn = new mysqli('localhost', 'webdes57_prom', 'Prom99!!', 'webdes57_prom'); 
+	$conn = new mysqli('localhost', 'upezzsmy_newuser', '05980751@m', 'upezzsmy_promotion'); 
 	if ($conn->connect_error)
 	{
 	    die("Connection failed: " . $conn->connect_error);
