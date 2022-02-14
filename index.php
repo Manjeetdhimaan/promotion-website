@@ -462,7 +462,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
                             <div class="item-folio__thumb">
                                 <a href="images/linkedin.jpg" class="thumb-link" title="Palmeira" data-size="1050x700">
-                                    <img src="images/linkedin.jpg" srcset="images/linkedIn.jpg 1x, images/linkedIn.jpg 2x" alt="">
+                                    <img src="images/linkedin.jpg" srcset="images/linkedin.jpg 1x, images/linkedin.jpg 2x" alt="">
                                 </a>
                             </div>
 

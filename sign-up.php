@@ -253,7 +253,7 @@
                         <i class="fa fa-diamond" aria-hidden="true"></i>
                         </span>
                         <div class="footer-text">
-                            <h6>&copy;copyright | SEO Friendly 2017.Developed by DuezaThemes</h6>
+                            <h6>&copy;copyright | SEO Friendly 2016.Developed by Younedia</h6>
                         </div>
                     </div>
                 </div>
