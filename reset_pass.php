@@ -4,7 +4,7 @@ if ($_GET['key'] && $_GET['reset'])
     $email = $_GET['key'];
     $pass = $_GET['reset'];
 
-    $conn = new mysqli('localhost', 'upezzsmy_newuser', '05980751@m', 'upezzsmy_promotion');
+    $conn = new mysqli('localhost', 'upezzsmy_promoti', 'upezzsmy_promoti', 'upezzsmy_promoti');
     if ($conn->connect_error)
     {
         die("Connection failed: " . $conn->connect_error);

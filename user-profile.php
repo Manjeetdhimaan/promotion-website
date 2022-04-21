@@ -90,9 +90,9 @@ input ~ .tab {
             <div class="header-nav__content">
                 <h3 style="color:#FFBA00;">Navigation</h3>
                 <ul class="header-nav__list">
-                    <li class="current"><a class="smoothscroll" href="user-profile.php" title="home">Dashboard</a></li>
-                    <li><a class="smoothscroll" href="allvideocheckout.html" title="about">Order Now</a></li>
-                    <li><a class="smoothscroll" href="logout.php" title="services">Sign Out</a></li>
+                    <li class="current"><a class="" href="user-profile.php" title="home">Dashboard</a></li>
+                    <li><a class="" href="allvideocheckout.html" title="about">Order Now</a></li>
+                    <li><a class="" href="logout.php" title="services">Sign Out</a></li>
                 </ul>
                 <ul class="header-nav__social">
                     <li>
@@ -207,7 +207,7 @@ input ~ .tab {
                                                                 <th scope="col">Order Details</th>
                                                             </tr>
                                                         </thead>
-                                                        <tbody>
+                                                        <tbody style="color:grey">
                                                             <?php
                                                     require_once "dbcontroller.php";
                                                     $db_handle = new DBController();

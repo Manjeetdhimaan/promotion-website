@@ -52,9 +52,10 @@
 			<div class="header-nav__content">
 				<h3 style="color:#FFBA00;">Navigation</h3>
 				<ul class="header-nav__list">
-					<li class="current"><a class="smoothscroll" href="user-profile.php" >Dashboard</a></li>
-					<li><a class="smoothscroll" href="allvideocheckout.html" >Order Now</a></li>
-					<li><a class="smoothscroll" href="logout.php" >Sign Out</a></li>
+                    <!-- smoothscroll -->
+					<li class="current"><a class="" href="user-profile.php" >Dashboard</a></li>
+					<li><a class="" href="allvideocheckout.html" >Order Now</a></li>
+					<li><a class="" href="logout.php" >Sign Out</a></li>
 				</ul>
 				<ul class="header-nav__social">
 					<li>    
@@ -102,7 +103,7 @@ if (isset($_POST['submit_password']) && $_POST['email'] && $_POST['password'])
 $email = $_POST['email'];
 $pass = $_POST['password'];
 
-$conn = new mysqli('localhost', 'upezzsmy_newuser', '05980751@m', 'upezzsmy_promotion');
+$conn = new mysqli('localhost', 'upezzsmy_promoti', 'upezzsmy_promoti', 'upezzsmy_promoti');
 if ($conn->connect_error)
 {
    die("Connection failed: " . $conn->connect_error);

@@ -157,7 +157,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         <div class="shadow-overlay"></div>
         <div class="home-content">
             <div class="row home-content__main">
-                <h1 style="color: #FFBA00;">Welcome to YouNedia</h1>
+                <h1 style="color: #FFBA00;">Promote Your YouTube Video Now</h1>
                 <div class="home-content__buttons">
                     <a href="#login" class="smoothscroll btn btn--stroke">
                         LOGIN NOW
@@ -196,11 +196,11 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
                 <form id="signupform0" style="margin-top: 0px;" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]); ?>" method="post">
                     <fieldset>
                         <div class="form-field">
-                            <input type="email" id="advertiser_email_box0" placeholder="Enter your email here" name="username" value="" required="" aria-required="true" class="full-width">
+                            <input type="email" id="advertiser_email_box0" placeholder="Enter your email here" name="username" required aria-required="true" class="full-width">
                         </div>
                         <span class="help-block"><?php echo $username_err; ?></span>
                         <div class="form-field">
-                            <input id="advertiser_password_box0" placeholder="Enter your password here" type="password" value="" required aria-required="true" class="full-width" required="">
+                            <input id="advertiser_password_box0" placeholder="Enter your password here" type="password"  name="password" required aria-required="true" class="full-width" required>
                         </div>
                         <span class="help-block"><?php echo $password_err; ?></span>
                         <input type="hidden" name="value" value="high" hidden required>
@@ -238,7 +238,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
                             <input type="password" id="register_confirmpassword" name="confirm_password" placeholder="Confirm Your Password" required="" value="" required aria-required="true" class="full-width">
                         </div>
                         <div class="form-field">
-                            <input type="submit" class="full-width btn--primary" style="margin-top: 45px;vertical-align:top;" name="" value="Promote Video Now" id="register_btn">
+                            <input type="submit" class="mybtn1 full-width btn--primary" style="margin-top: 45px;vertical-align:top;" name="" value="Promote Video Now" id="register_btn">
                         </div>
                     </fieldset>
                 </form>
@@ -518,10 +518,10 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
                     <a href="#0" title="" class="clients__slide"><img src="images/clients/Tania.png" /></a>
                     <a href="#0" title="" class="clients__slide"><img src="images/clients/Ammy-Virk.png" /></a>
                     <a href="#0" title="" class="clients__slide"><img src="images/clients/baaniSandhu.png" /></a>
-                    <a href="#0" title="" class="clients__slide"><img src="images/clients/sonam-bajwa.png" /></a>
+                    <a href="#0" title="" class="clients__slide"><img src="images/clients/dilpreet-dhillon.jpg" /></a>
                     <a href="#0" title="" class="clients__slide"><img src="images/clients/InderChahal.png" /></a>
-                    <a href="#0" title="" class="clients__slide"><img src="images/clients/Binnu-Dhillon.png" /></a>
-                    <a href="#0" title="" class="clients__slide"><img src="images/clients/Nia-Sharma.png" /></a>
+                    <!-- <a href="#0" title="" class="clients__slide"><img src="images/clients/Binnu-Dhillon.png" /></a> -->
+                    <!-- <a href="#0" title="" class="clients__slide"><img src="images/clients/Nia-Sharma.png" /></a> -->
 
                 </div> <!-- end clients -->
             </div> <!-- end col-full -->

@@ -138,7 +138,7 @@
                                                 idRefined = idRefined.substring(0, idRefined.indexOf("&"));
                                             }
                                             var url = "https://youtube.com/embed/" + idRefined;
-                                            document.getElementById("showVideoThumbnail").innerHTML = "<br><iframe style='width: 484px; height: 364px;' src='" + url + "'></iframe>";
+                                            document.getElementById("showVideoThumbnail").innerHTML = "<br><iframe style='width: 100%; height: 364px;' src='" + url + "'></iframe>";
                                         }
                                     </script>
                                     <br><br>
@@ -216,8 +216,37 @@
                                             };
                                         });
                                     </script>
+                                    <h4 class="spc-title"><strong>4) PLEASE MAKE THE PAYMENT</strong></h4>
+                                    <div id="paypal-payment-button" style="width: 100px;">
+                                    </div>
+                                    <script src="https://www.paypal.com/sdk/js?client-id=AdE9dFMWCIox8dcpbRCnPOuiTfD9i03oDj_u9LDRqEhn49VY4rpI12U1fW3j4BWFKPm5BamgjXsiNLoX"></script>
+                                    <script>
+                                        paypal.Buttons({
+                                            style: {
+                                                color: 'blue',
+                                                shape: 'pill'
+                                            },
+                                            createOrder: function(data, actions) {
+                                                return actions.order.create({
+                                                    purchase_units: [{
+                                                        amount: {
+                                                            value: document.getElementById("budget").value.replace('$', '').replace(' USD', '')
+                                                        }
+                                                    }]
+                                                })
+                                            },
+                                            onApprove: function(data, actions) {
+                                                return actions.order.capture().then(function(details) {
+                                                    document.getElementById('submitButton').style.display = "block";
+                                                })
+                                            },
+                                            onCancel: function(data) {
+                                                window.location.replace("allvideocheckout.html");
+                                            }
+                                        }).render('#paypal-payment-button');
+                                    </script>
                                     <br><br>
-                                    <button type="submit" value="Submit" class="btn btn-primary" id="submitButton">Pay Now</button>
+                                    <!-- <button type="submit" value="Submit" class="btn btn-primary" id="submitButton">Pay Now</button> -->
                                     <br><br>
                                     <iframe id="iframe" src="" height="1100" width="1170" style="border: none; position: absolute; left: 248px; top: 384px; z-index: 5; display: none;"></iframe>
                                 </form>
